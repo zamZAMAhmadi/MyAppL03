@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/activity_main_layout">
+
+    <TextView
+        android:id="@+id/topleft_textview"
+        android:layout_width="@dimen/length"
+        android:layout_height="@dimen/length"
+        android:tag="topleft"
+        android:textSize="@dimen/textsize"
+        android:text="Top Left"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/topright_textview"
+        android:layout_width="@dimen/length"
+        android:layout_height="@dimen/length"
+        android:tag="topleft"
+        android:textSize="@dimen/textsize"
+        android:text="Top Right"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/bottomleft_button"
+        android:layout_width="@dimen/length"
+        android:layout_height="@dimen/length"
+        android:text="Bottom Left"
+        android:tag="bottomleft"
+        android:textSize="@dimen/textsize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <Button
+        android:id="@+id/bottomright_button"
+        android:layout_width="@dimen/length"
+        android:layout_height="@dimen/length"
+        android:text="Bottom Right"
+        android:tag="bottomright"
+        android:textSize="@dimen/textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:min="5"
+        android:max="100"
+        android:progress="30"
+        android:progressTint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
